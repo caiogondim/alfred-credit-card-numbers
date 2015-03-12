@@ -38,5 +38,5 @@ credit_card_numbers['amex'] = credit_card_numbers['american_express']
 
 try:
     sys.stdout.write(credit_card_numbers[sys.argv[1]][randrange(0, 4)])
-except KeyError:
-    print 'No credit card with this name'
+except:
+    pass
