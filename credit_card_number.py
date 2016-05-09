@@ -32,10 +32,11 @@ credit_card_numbers = {
         '6011258179302680',
         '6011403893137281',
         '6011344968401907'
-    ]            
+    ]
 }
 
 credit_card_numbers['amex'] = credit_card_numbers['american_express']
+credit_card_numbers['master'] = credit_card_numbers['mastercard']
 
 try:
     sys.stdout.write(credit_card_numbers[sys.argv[1]][randrange(0, 4)])
